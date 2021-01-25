@@ -76,6 +76,14 @@
                                             <segue destination="3PX-Pz-Ir5" kind="show" id="Rsb-6c-zWL"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ICC-t2-FUb">
+                                        <rect key="frame" x="257" y="176" width="34" height="32"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" backgroundImage="paintbrush" catalog="system">
+                                            <color key="titleColor" systemColor="systemIndigoColor"/>
+                                        </state>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemIndigoColor"/>
                                 <constraints>
@@ -164,14 +172,14 @@
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Full name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ATJ-fw-yPr">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Unspecified" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ATJ-fw-yPr">
                                         <rect key="frame" x="177" y="33" width="189" height="18"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="8" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qr4-Qs-Zr4">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Unspecified" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qr4-Qs-Zr4">
                                         <rect key="frame" x="162" y="59" width="189" height="18"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
@@ -192,7 +200,7 @@
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="8" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SCJ-v2-hjQ">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Unspecified" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SCJ-v2-hjQ">
                                         <rect key="frame" x="190" y="85" width="176" height="18"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
@@ -219,6 +227,22 @@
                             <constraint firstItem="z5X-Bo-BsV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="hoU-hg-sgN"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="btnChangeColor" destination="ICC-t2-FUb" id="mVf-Xc-qx4"/>
+                        <outlet property="btnEdit" destination="hfL-ty-xUI" id="ZlY-Iw-Wk9"/>
+                        <outlet property="clonedImage" destination="5Kt-p3-CoN" id="w8G-Ag-7V4"/>
+                        <outlet property="clonerImage" destination="qqI-Dz-0A7" id="EC8-6d-iuq"/>
+                        <outlet property="lblClonedAge" destination="qr4-Qs-Zr4" id="pXe-4D-ZD7"/>
+                        <outlet property="lblClonedName" destination="ATJ-fw-yPr" id="fJP-1X-y9n"/>
+                        <outlet property="lblClonedSpecies" destination="SCJ-v2-hjQ" id="G7o-1d-eyu"/>
+                        <outlet property="lblClonerAge" destination="gCt-fF-gJl" id="1UY-Uz-0Ty"/>
+                        <outlet property="lblClonerEvilness" destination="Mne-u2-e3y" id="fRy-iw-bpW"/>
+                        <outlet property="lblClonerName" destination="s58-Kk-bmw" id="Vb4-YA-9vY"/>
+                        <outlet property="lblOriginalAge" destination="bxb-No-7JM" id="br2-tt-ROi"/>
+                        <outlet property="lblOriginalName" destination="tnh-jq-neh" id="SbW-uM-6qH"/>
+                        <outlet property="lblOriginalSpecies" destination="N0u-EY-S4f" id="I39-Q2-LPa"/>
+                        <outlet property="originalImage" destination="Eyn-vJ-RqB" id="RGQ-kB-s4L"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -242,6 +266,9 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="LXC-35-mZG"/>
+                    <connections>
+                        <outlet property="btnChangeHeaderColor" destination="biC-2L-lir" id="yCb-Oj-OOm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oya-Eo-FXK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -249,6 +276,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="paintbrush" catalog="system" width="122" height="128"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

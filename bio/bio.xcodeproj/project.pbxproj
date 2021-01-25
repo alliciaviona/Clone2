@@ -14,6 +14,11 @@
 		2C4CDE3A25BEDFFD001AE496 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C4CDE3925BEDFFD001AE496 /* Assets.xcassets */; };
 		2C4CDE3D25BEDFFD001AE496 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C4CDE3B25BEDFFD001AE496 /* LaunchScreen.storyboard */; };
 		2C4CDE4625BEED03001AE496 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4CDE4525BEED03001AE496 /* SecondViewController.swift */; };
+		2C4CDE4C25BEF363001AE496 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4CDE4B25BEF363001AE496 /* User.swift */; };
+		2C4CDE4F25BEF376001AE496 /* Villager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4CDE4E25BEF376001AE496 /* Villager.swift */; };
+		2C4CDE5225BEF381001AE496 /* Zombie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4CDE5125BEF381001AE496 /* Zombie.swift */; };
+		2C4CDE5525BEF38A001AE496 /* Wizard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4CDE5425BEF38A001AE496 /* Wizard.swift */; };
+		2C4CDE5825BEF3CE001AE496 /* System.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4CDE5725BEF3CE001AE496 /* System.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +31,11 @@
 		2C4CDE3C25BEDFFD001AE496 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2C4CDE3E25BEDFFD001AE496 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2C4CDE4525BEED03001AE496 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		2C4CDE4B25BEF363001AE496 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		2C4CDE4E25BEF376001AE496 /* Villager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Villager.swift; sourceTree = "<group>"; };
+		2C4CDE5125BEF381001AE496 /* Zombie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Zombie.swift; sourceTree = "<group>"; };
+		2C4CDE5425BEF38A001AE496 /* Wizard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wizard.swift; sourceTree = "<group>"; };
+		2C4CDE5725BEF3CE001AE496 /* System.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = System.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +68,7 @@
 		2C4CDE2F25BEDFFD001AE496 /* bio */ = {
 			isa = PBXGroup;
 			children = (
+				2C4CDE4A25BEF33E001AE496 /* Model */,
 				2C4CDE3025BEDFFD001AE496 /* AppDelegate.swift */,
 				2C4CDE3225BEDFFD001AE496 /* SceneDelegate.swift */,
 				2C4CDE3425BEDFFD001AE496 /* ViewController.swift */,
@@ -68,6 +79,18 @@
 				2C4CDE3E25BEDFFD001AE496 /* Info.plist */,
 			);
 			path = bio;
+			sourceTree = "<group>";
+		};
+		2C4CDE4A25BEF33E001AE496 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2C4CDE4B25BEF363001AE496 /* User.swift */,
+				2C4CDE4E25BEF376001AE496 /* Villager.swift */,
+				2C4CDE5125BEF381001AE496 /* Zombie.swift */,
+				2C4CDE5425BEF38A001AE496 /* Wizard.swift */,
+				2C4CDE5725BEF3CE001AE496 /* System.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,10 +163,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C4CDE5525BEF38A001AE496 /* Wizard.swift in Sources */,
 				2C4CDE4625BEED03001AE496 /* SecondViewController.swift in Sources */,
 				2C4CDE3525BEDFFD001AE496 /* ViewController.swift in Sources */,
 				2C4CDE3125BEDFFD001AE496 /* AppDelegate.swift in Sources */,
+				2C4CDE4C25BEF363001AE496 /* User.swift in Sources */,
 				2C4CDE3325BEDFFD001AE496 /* SceneDelegate.swift in Sources */,
+				2C4CDE4F25BEF376001AE496 /* Villager.swift in Sources */,
+				2C4CDE5825BEF3CE001AE496 /* System.swift in Sources */,
+				2C4CDE5225BEF381001AE496 /* Zombie.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
