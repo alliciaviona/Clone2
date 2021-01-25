@@ -11,10 +11,16 @@ class SecondViewController: UIViewController {
 
     @IBOutlet weak var btnChangeHeaderColor: UIButton!
     
+    // Object needed
+    var system = System()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+    }
+    
+    @IBAction func pressChangeHeaderColor(_ sender: Any) {
+        system.changeColor()
     }
     
 
