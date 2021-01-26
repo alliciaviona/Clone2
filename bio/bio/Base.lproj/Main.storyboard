@@ -73,7 +73,7 @@
                                             <color key="titleColor" systemColor="systemIndigoColor"/>
                                         </state>
                                         <connections>
-                                            <segue destination="3PX-Pz-Ir5" kind="show" id="Rsb-6c-zWL"/>
+                                            <segue destination="3PX-Pz-Ir5" kind="show" identifier="segue_to" id="Rsb-6c-zWL"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ICC-t2-FUb">
