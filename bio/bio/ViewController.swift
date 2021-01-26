@@ -29,18 +29,21 @@ class ViewController: UIViewController {
     @IBOutlet weak var lblClonedAge: UILabel!
     @IBOutlet weak var lblClonedSpecies: UILabel!
     
+    // Object Needed (for demo)
+    let system = System()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        lblClonerName.text = user.name
-        lblClonerAge.text = "\(user.age)"
-        lblClonerEvilness.text = "\(user.evilness)"
-        clonerImage.image = user.profile_picture
+        lblClonerName.text = "full name"
+        lblClonerAge.text = "0"
+        lblClonerEvilness.text = "0"
+        clonerImage.image = #imageLiteral(resourceName: "profile_picture")
        
-        lblOriginalName.text = original.name
-        lblOriginalAge.text = "\(original.age)"
-        lblOriginalSpecies.text = original.species
-        originalImage.image = original.image
+        lblOriginalName.text = "full name"
+        lblOriginalAge.text = "0"
+        lblOriginalSpecies.text = "species"
+        originalImage.image = #imageLiteral(resourceName: "profile_picture")
         
     }
     

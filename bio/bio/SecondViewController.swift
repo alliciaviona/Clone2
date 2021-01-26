@@ -8,7 +8,9 @@
 import UIKit
 
 class SecondViewController: UIViewController {
-
+    
+    var system: System?
+    
     @IBOutlet weak var btnChangeHeaderColor: UIButton!
     
     override func viewDidLoad() {
