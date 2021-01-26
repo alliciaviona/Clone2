@@ -32,6 +32,33 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        lblClonerName.text = user.name
+        lblClonerAge.text = "\(user.age)"
+        lblClonerEvilness.text = "\(user.evilness)"
+        clonerImage.image = user.profile_picture
+       
+        lblOriginalName.text = original.name
+        lblOriginalAge.text = "\(original.age)"
+        lblOriginalSpecies.text = original.species
+        originalImage.image = original.image
+        
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        adjustTheme()
+        navigationController?.setNavigationBarHidden(true, animated: animated)
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        navigationController?.setNavigationBarHidden(false, animated: animated)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "segue_to" {
+            let vc = segue.destination as? SecondViewController
+            vc?.system = self.system
+        }
     }
 
 
