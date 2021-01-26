@@ -51,6 +51,14 @@ class ViewController: UIViewController {
         
     }
     
+    @IBAction func pressPaint(_ sender: Any) {
+        system.changeColor()
+        header.backgroundColor = system.color
+        btnEdit.setTitleColor(system.color, for: .normal)
+        btnClone.backgroundColor = system.color
+    }
+    
+    
     override func viewWillAppear(_ animated: Bool) {
         adjustTheme()
         navigationController?.setNavigationBarHidden(true, animated: animated)
@@ -67,7 +75,7 @@ class ViewController: UIViewController {
             vc?.system = self.system
         }
     }
-
+    
 
 }
 
@@ -77,4 +85,5 @@ extension ViewController {
         btnEdit.setTitleColor(system.color, for: .normal)
         btnClone.backgroundColor = system.color
     }
+    
 }

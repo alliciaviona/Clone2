@@ -19,5 +19,8 @@ class SecondViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func pressChangeHeaderColor(_ sender: Any) {
+        system?.changeColor()
+    }
+    
 }

@@ -83,6 +83,9 @@
                                         <state key="normal" backgroundImage="paintbrush" catalog="system">
                                             <color key="titleColor" systemColor="systemIndigoColor"/>
                                         </state>
+                                        <connections>
+                                            <action selector="pressPaint:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6Yg-vW-qk0"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemIndigoColor"/>
@@ -263,6 +266,9 @@
                                 <rect key="frame" x="20" y="119" width="374" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Change Header Color"/>
+                                <connections>
+                                    <action selector="pressChangeHeaderColor:" destination="3PX-Pz-Ir5" eventType="touchUpInside" id="YZ2-eT-HFi"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="N4d-Rn-tZI"/>
