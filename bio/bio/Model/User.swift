@@ -6,3 +6,12 @@
 //
 
 import Foundation
+import UIKit
+
+struct User {
+    // attribute
+    var name: String
+    var age: String
+    var evilness: Int
+    var image: UIImage
+}
