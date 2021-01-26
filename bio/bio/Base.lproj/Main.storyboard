@@ -230,9 +230,11 @@
                     <navigationItem key="navigationItem" id="KiV-3Q-fgd"/>
                     <connections>
                         <outlet property="btnChangeColor" destination="ICC-t2-FUb" id="mVf-Xc-qx4"/>
+                        <outlet property="btnClone" destination="h7Q-0K-tO9" id="kAO-j0-3cy"/>
                         <outlet property="btnEdit" destination="hfL-ty-xUI" id="ZlY-Iw-Wk9"/>
                         <outlet property="clonedImage" destination="5Kt-p3-CoN" id="w8G-Ag-7V4"/>
                         <outlet property="clonerImage" destination="qqI-Dz-0A7" id="EC8-6d-iuq"/>
+                        <outlet property="header" destination="z5X-Bo-BsV" id="JId-1m-PUc"/>
                         <outlet property="lblClonedAge" destination="qr4-Qs-Zr4" id="pXe-4D-ZD7"/>
                         <outlet property="lblClonedName" destination="ATJ-fw-yPr" id="fJP-1X-y9n"/>
                         <outlet property="lblClonedSpecies" destination="SCJ-v2-hjQ" id="G7o-1d-eyu"/>

@@ -9,6 +9,10 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    // Theme
+    @IBOutlet weak var header: UIView!
+    @IBOutlet weak var btnClone: UIButton!
+    
     // Cloner Identity
     @IBOutlet weak var lblClonerName: UILabel!
     @IBOutlet weak var lblClonerAge: UILabel!
@@ -67,3 +71,10 @@ class ViewController: UIViewController {
 
 }
 
+extension ViewController {
+    func adjustTheme() {
+        header.backgroundColor = system.color
+        btnEdit.setTitleColor(system.color, for: .normal)
+        btnClone.backgroundColor = system.color
+    }
+}
